@@ -82,13 +82,10 @@ def home():
                 result = text_to_morse(user_input)
 
             # Optional: play morse only when generating morse
-            play_morse(result)  # Uncomment if you want it (Windows only)
+            # play_morse(result)  # Uncomment if you want it (Windows only)
 
         except ValueError as e:
             error = str(e)
 
     return render_template("index.html", result=result, error=error, mode=mode)
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
