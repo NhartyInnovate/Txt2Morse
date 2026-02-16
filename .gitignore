@@ -1,8 +1,16 @@
 __pycache__/
 *.pyc
-.env
+
+# Virtual environments
+.venv/
 venv/
-.env/
+
+# Environment files
+.env
+
+# IDE folders
 .idea/
 .vscode/
+
+# OS files
 .DS_Store

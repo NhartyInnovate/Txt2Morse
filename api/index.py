@@ -7,7 +7,8 @@ try:
 except ImportError:
     winsound = None
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="../templates", static_folder="../static")
+
 
 MORSE_CODE = {
     "A": ".-","B": "-...","C": "-.-.","D": "-..","E": ".","F": "..-.","G": "--.",
